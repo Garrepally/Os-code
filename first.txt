@@ -1,0 +1,21 @@
+#include<unistd.h>
+#include<stdio.h>
+#include<sys/wait.h>
+int main()
+{
+int p,n,i;
+scanf("%d",&n);
+p=fork();
+if(p==0)
+{
+for(i=n;i>1;i=i/2)
+{
+printf("%d",i);
+printf(",");
+}
+}
+else{
+wait(NULL);
+}
+return 0;
+}
