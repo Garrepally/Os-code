@@ -15,6 +15,7 @@ printf(",");
 }
 }
 else{
+printf("invalid number");
 wait(NULL);
 }
 return 0;
